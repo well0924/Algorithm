@@ -9,22 +9,22 @@ public class InsertSort {
 		arr[num2] = tmp;
 	}
 	
-	static void InsertSort(int[]arr, int size) {
+	public static void InsertSorts(int[]arr, int size) {
 		for (int end = 1; end < arr.length; end++) {
             int i = end;
-            System.out.println(Arrays.toString(arr));
             while (i > 0 && arr[i - 1] > arr[i]) {
+            	System.out.println(Arrays.toString(arr));
             	swap(arr, i - 1, i);
-                System.out.println(Arrays.toString(arr));
+//                System.out.println(Arrays.toString(arr));
                 i--;
             }
         }
 	}
 	public static void main(String[] args) {
 		//삽입정렬
-		int[]numbers = {2,1,5,4,3};
+		int[]numbers = {3,1,2,6,7,5,4};
 		
-		InsertSort(numbers, numbers.length);
+		InsertSorts(numbers, numbers.length);
 		
 		for(int output:numbers) {
 			System.out.print(output+" ");
