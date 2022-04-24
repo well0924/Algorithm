@@ -17,6 +17,7 @@ public class Hanoi {
 	}
 	
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		int input  = sc.nextInt();
 		sb.append((int)(Math.pow(2,input)-1)).append('\n');

@@ -3,6 +3,7 @@ package Algorithm.sort;
 import java.util.Arrays;
 
 public class InsertSort {
+	
 	static void swap(int[]arr,int num1, int num2) {
 		int tmp = arr[num1];
 		arr[num1] = arr[num2];
@@ -15,11 +16,11 @@ public class InsertSort {
             while (i > 0 && arr[i - 1] > arr[i]) {
             	System.out.println(Arrays.toString(arr));
             	swap(arr, i - 1, i);
-//                System.out.println(Arrays.toString(arr));
                 i--;
             }
         }
 	}
+	
 	public static void main(String[] args) {
 		//삽입정렬
 		int[]numbers = {3,1,2,6,7,5,4};

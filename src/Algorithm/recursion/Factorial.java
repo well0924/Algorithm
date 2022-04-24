@@ -28,5 +28,6 @@ public class Factorial {
 //		System.out.println(result);
 		int result2= fibonachi(input);
 		System.out.println(result2);
+		
 	}
 }
