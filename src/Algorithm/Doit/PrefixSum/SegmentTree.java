@@ -1,6 +1,7 @@
 package Algorithm.Doit.PrefixSum;
 
 public class SegmentTree {
+	
 	long tree[];
 	int treeSize;
 	
@@ -44,6 +45,7 @@ public class SegmentTree {
 			update(node*2+1,(start+end)/2+1,end,idx,diff);
 		}
 	}
+	
 	//구하고자 하는 덧셉을 진행
 	public long sum(int node, int start, int end, int left, int right) {
 		//범위를 벗어나게 되는 경우 더할 필요 없음
