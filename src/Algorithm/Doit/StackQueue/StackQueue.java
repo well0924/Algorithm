@@ -27,9 +27,9 @@ public class StackQueue {
 				bf.append("-\n");
 			}
 			else {
-				int n = stack.pop();
+				int N = stack.pop();
 				
-				if(n > su) {
+				if(N > su) {
 					System.out.println("NO");
 					result = false;
 					break;
