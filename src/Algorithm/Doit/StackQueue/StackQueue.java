@@ -16,6 +16,7 @@ public class StackQueue {
 		StringBuffer bf = new StringBuffer();
 		int num =1;
 		boolean result = true;
+		
 		for(int i =0; i<a.length;i++) {
 			int su = a[i];
 			if(su >= num) {

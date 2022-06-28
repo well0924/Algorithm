@@ -25,5 +25,6 @@ public class Average {
 		}
 		double result = sum*100.00/max/input;
 		System.out.println(result);
+		sc.close();
 	}
 }
