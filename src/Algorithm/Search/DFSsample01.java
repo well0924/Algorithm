@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class DFSsample01 {
+	//백준 연결요소의 개수 구하기.
 	
+	//
 	static ArrayList<Integer>[]A;
+	//방문 여부
 	static boolean visited[];
 	
 	public static void main(String[] args) throws Exception {
