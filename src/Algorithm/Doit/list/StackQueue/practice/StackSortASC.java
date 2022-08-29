@@ -7,7 +7,6 @@ public class StackSortASC {
 	//백준 1874
 	public static void main(String[] args) {
 		
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
 		int n = sc.nextInt();
