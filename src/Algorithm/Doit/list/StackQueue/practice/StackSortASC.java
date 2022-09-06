@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class StackSortASC {
-	//백준 1874
+	//백준 1874 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
@@ -48,5 +48,6 @@ public class StackSortASC {
 		if(result) {
 			System.out.println(bf.toString());
 		}
+		sc.close();
 	}
 }
