@@ -1,30 +1,8 @@
-# BFS  
+package Algorithm.Doit.Search.bfs;
 
-# 1. 그래프 완전탐색기법 중 하나
+import java.util.LinkedList;
+import java.util.Queue;
 
-> 그래프 완전 탐색
- 
-> 시작 정점으로부터 가까운 정점을 먼저 방문하고 멀리 떨어져 있는 정점을 나중에 방문하는 순회하는 방법이다.	
-
-# 1-1. 기능
-	
->* __큐를 사용__
-	
-# 1-2.특징
-
->1.노드는 다시 방문하지 않으므로 방문한 노드를 체크하기 위한
-배열이 필요 
-
->2.시작할 노드를 정한 뒤 사용할 자료구조를 초기화하기
-
->3.큐에서 노드를 꺼낸 후 꺼낸 노드의 인접 노드를 다시 큐에 삽입을 하기.
-
->4.큐 자료구조에 값이 없을 때까지 반복하기.
-
-# 1-3.코드 구현
-
-<pre>
-<code>
 public class BFSSample01 {
 	public static void main(String[] args) {
 		int[][]graph = {{},{2,3,8},{1,6,8},{1,5}, {5,7}, {3,4,7}, {2}, {4,5}, {1,2}};
@@ -46,11 +24,10 @@ public class BFSSample01 {
 		while(!q.isEmpty()) {
 			int nodeIndex = q.poll();
 			sb.append(nodeIndex + " -> ");
-
+			//큐에서 꺼낸 노드와 연결된 노드들 체크
 			for(int i=0; i<graph[nodeIndex].length; i++) {
-
 				int temp = graph[nodeIndex][i];
-
+				// 방문하지 않았으면 방문처리 후 큐에 넣기
 				if(!visited[temp]) {
 					visited[temp] = true;
 					q.offer(temp);
@@ -59,6 +36,4 @@ public class BFSSample01 {
 		}
 		return sb.toString();
 	}
-} 
-</code>
-</pre>
+}

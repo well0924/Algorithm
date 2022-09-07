@@ -1,4 +1,4 @@
-package Algorithm.Doit.Search;
+package Algorithm.Doit.Search.dfs;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

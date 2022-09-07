@@ -1,4 +1,4 @@
-package Algorithm.Doit.Search;
+package Algorithm.Doit.Search.dfs;
 
 public class DFSsample {
 	public static void dfs(int[]numbers, int idx,boolean[]visit) {
