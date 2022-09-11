@@ -1,6 +1,6 @@
-# 알고리즘(DFS)
+# DFS
 
-#1.dfs
+#1. 그래프 완전탐색기법 중 하나
 
 >그래프 완전탐색기법 중 하나. 
 
@@ -39,5 +39,27 @@ pop()을 수행해서 노드를 꺼낸다->꺼낸 노드를 탐색 순서에 기
 # 1-3.코드 구현
 
 
-
+<pre>
+<code>
+public class DFSsample {
+	public static void dfs(int[]numbers, int idx,boolean[]visit) {
+		visit[idx] = true;
+		
+		for(int i : numbers) {
+			if(!visit[i]) {
+				dfs(numbers,idx,visit);
+			}
+		}
+	}
+	public static void main(String[] args) {
+		int[]numbers = {1,2,3,4,5};
+		boolean[]visit = {false,false,false,false,false,};
+		
+		dfs(numbers,0,visit);
+		
+		System.out.println();
+	}
+}
+</code>
+</pre>
 
