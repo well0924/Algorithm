@@ -1,31 +1,43 @@
 package Algorithm;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Test {
-	//백준25304번
-	public static void main(String[] args) throws Exception {
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in)); 
-	        
-	    int totalprice = Integer.parseInt(bf.readLine());
-	    int count = Integer.parseInt(bf.readLine());
-	        
-	    for(int i=0; i<count;i++){
-	    	
-	    	String[]str = bf.readLine().split(" ");
-	    	
-	    	int price = Integer.parseInt(str[0]);
-	    	int quantity = Integer.parseInt(str[1]);
-	            
-	    	totalprice = totalprice - (price*quantity);
-	    }    
-	        
-        if(totalprice == 0){
-            System.out.println("Yes");
-        }else{
-            System.out.println("No");
-        }
-        
+	
+	public static void swap(int[]arr,int num1,int num2) {
+		int tmp = arr[num1];
+		
+		arr[num1] = arr[num2];
+		arr[num2] = tmp;
+	}
+	
+	
+	public static void BubbleSort(int[]arr, int size) {
+		for(int i =0; i< size-1 ; i++) {
+			for(int j=0;j<size-i-1;j++) {
+				if(arr[j]>arr[j+1]) {
+					swap(arr, j, j+1);
+				}
+			}
+		}
+	}
+	
+	public static void sort(int[]arr) {
+		BubbleSort(arr, arr.length);
+	}
+	
+	public static void main(String[] args) {
+		
+		int[]numbers = {4,3,20,5,8};
+		
+		
+		for(int i = 0; i <numbers.length -1;i++) {
+			for(int j = 0; j<numbers.length-i-1;j++) {
+				if() {
+					
+				}
+			}
+		}
 	}
 }
