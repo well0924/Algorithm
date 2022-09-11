@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class StackTest {
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		
 		StackSample01 s = new StackSample01(64);//최대 64개까지 푸시할수 있는 스택
@@ -48,5 +49,6 @@ public class StackTest {
 					   break;
 			}
 		}
+		sc.close();
 	}
 }
