@@ -32,12 +32,7 @@ public class Test {
 		int[]numbers = {4,3,20,5,8};
 		
 		
-		for(int i = 0; i <numbers.length -1;i++) {
-			for(int j = 0; j<numbers.length-i-1;j++) {
-				if() {
-					
-				}
-			}
-		}
+	
+		
 	}
 }
