@@ -9,7 +9,9 @@ public class TwoPointer {
 	public static void main(String[] args) {
 		//case01.두 배열이 동시에 시작하는 경우
 		int[]arr = {1,2,3,4,2,5,3,1,1,2};
+		
 		int n = 10;//배열길이
+		
 		int m = 5;//구간합
 		
 		int left = 0;//왼쪽
@@ -30,7 +32,7 @@ public class TwoPointer {
 				cnt++;
 			}
 		}
-		
+
 		System.out.println(cnt);
 	}
 }
