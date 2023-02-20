@@ -30,9 +30,5 @@ public class Test {
 	public static void main(String[] args) {
 		
 		int[]numbers = {4,3,20,5,8};
-		
-		
-	
-		
 	}
 }
