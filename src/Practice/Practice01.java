@@ -10,7 +10,8 @@ import Practice.Domain.Trader;
 import Practice.Domain.Transaction;
 
 public class Practice01 {
-	//
+	//참고한 블로그
+	//https://p829911.tistory.com/21
 	public static void main(String[] args) {
 			
 			Trader raoul = new Trader("Raoul", "Cambridge");
