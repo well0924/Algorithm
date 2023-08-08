@@ -1,6 +1,7 @@
 package Practice;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -11,14 +12,14 @@ import Practice.Domain.Student;
 
 public class PPP {
 	public static void main(String[] args) {
-		  List<String>list = Arrays .asList( "This is a java book",
-				  "Lamda Expressions", "Java8 supports lamda expressions");
+		  List<String>list = Arrays .asList( "This is a java book", "Lamda Expressions", "Java8 supports lamda expressions");
 				  
+		  		  //리스트 중에 T와 java가 포함된 글자를 출력하는 스트림
 				  list .stream() .filter(str->str.startsWith("T"))
 				  .filter(str->str.toLowerCase().contains("java"))
 				  .forEach(str->System.out.println(str));
 				
-				
+				  
 				  List<Member>memberList = Arrays
 						  .asList( new Member("test1","디자이너",40), new Member("test2","개발자",30), new Member("test4","개발자",26));
 				  

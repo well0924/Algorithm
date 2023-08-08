@@ -3,7 +3,9 @@ package Practice;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import Practice.Domain.Trader;
@@ -108,5 +110,10 @@ public class Practice01 {
 	        // CODE
 	        int result08= transactions.stream().max(Comparator.comparing(Transaction::getValue)).get().getValue();
 	        System.out.println("Question.08:"+result08);
+	        
+	        Map<Object,Object>result8= transactions.stream().collect(Collectors.toMap(Function.identity(),Transaction::getTrader));
+	        System.out.println(result8);
+	        
+	        transactions.stream().map(t->t.getTrader()+" "+t.getValue()).forEach(t->System.out.println(t));
 	}
 }

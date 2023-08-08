@@ -1,16 +1,36 @@
 package Practice.Domain;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Board {
 	
 	private Integer id;
+	
 	private String title;
+	
 	private String contetns;
+	
 	private String author;
+	
 	private Boolean liked;
+	
 	private Integer readCount;
+	
 	private LocalDateTime createdTime;
+	
+	private List<Comment>commentList;
+	
+	public Board(Integer id,String title,String author,String contents,Boolean liked,Integer readCount,LocalDateTime createdTime,List<Comment>list) {
+		this.id = id;
+		this.title = title;
+		this.author = author;
+		this.contetns = contents;
+		this.liked = liked;
+		this.readCount = readCount;
+		this.createdTime = createdTime;
+		this.commentList = list;
+	}
 	
 	public Integer getId() {
 		return id;
@@ -54,8 +74,12 @@ public class Board {
 	public void setCreatedTime(LocalDateTime createdTime) {
 		this.createdTime = createdTime;
 	}
-	
-	
+	public List<Comment> getCommentList() {
+		return commentList;
+	}
+	public void setCommentList(List<Comment> commentList) {
+		this.commentList = commentList;
+	}
 	@Override
 	public int hashCode() {
 		// TODO Auto-generated method stub
@@ -66,6 +90,5 @@ public class Board {
 		// TODO Auto-generated method stub
 		return super.toString();
 	}
-	
-	
+		
 }
